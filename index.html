@@ -53,6 +53,7 @@
             <img id="Scene-3" src="./Style/Images/Scene-3.jpg">
             <img id="Scene-4" src="./Style/Images/Scene-4.jpg">
             <img id="Scene-5" src="./Style/Images/Scene-5.jpg">
+            <img id="Scene-6" src="./Style/Images/Scene-6.jpg">
     
         </a-assets>
 
@@ -85,7 +86,12 @@
                 the_dote="Name_of_dote: Dote-2  ; Group_to_activate: Group-2 ; The_rotation: 0">
             </a-plane>
 
-        
+            <a-plane data-clickable scale='0.9 0.9 0.9' opacity='.5' class="pintings clickable"
+            position="-3.20397 -1.77706 -1.51308" rotation="-77.7056820912325 101.82147568828886 167.8875201714387" 
+            material="src: #Arrow-1; transparent:true"
+                the_dote="Name_of_dote: Dote-6  ; Group_to_activate: Group-6 ; The_rotation: 0">
+            </a-plane>
+
 
         </a-entity>
         <!-- Group-0. -->
@@ -177,6 +183,17 @@
 
         </a-entity>
    
+        <!-- Group-6 -->
+        <a-entity scale="0 0 0" rotation="0 -90 0" class="groups" id="Group-6" visible="false">
+
+            <a-plane data-clickable scale='0.9 0.9 0.9' opacity='.5' class="pintings clickable"
+            position="2.83878 -1.27619 1.72865" rotation="-69.14855742095367 -83.4346870847456 -5.663114847073056"
+            material="src: #Arrow-1; transparent:true"
+                the_dote="Name_of_dote: Dote-1  ; Group_to_activate: Group-1 ; The_rotation: 0">
+            </a-plane>
+
+        </a-entity>
+   
  
 
         <!-- ############################################################ -->
@@ -255,6 +272,9 @@
                                 break;
                             case 'Dote-5':
                                 the_sky.setAttribute('src', '#Scene-5')
+                                break;
+                            case 'Dote-6':
+                                the_sky.setAttribute('src', '#Scene-6')
                                 break;
                       
                    
